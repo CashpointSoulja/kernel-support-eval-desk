@@ -1,0 +1,14 @@
+[
+ {"id":"rate-limit","input":"How do I rate limit API calls?","expected_route":"API troubleshooting","expected_citations":["api-01#limits"],"expected_abstention":false},
+ {"id":"merge","input":"Accounts merged and should remain distinct","expected_route":"data-quality issue","expected_citations":["merge-01#report"],"expected_abstention":false,"must_not_merge":[["DEMO-A","DEMO-B"]]},
+ {"id":"parent","input":"subsidiary has wrong parent","expected_route":"data-quality issue","expected_citations":["hierarchy-01#review"],"expected_abstention":false},
+ {"id":"brand","input":"brand mapped to holding company","expected_route":"data-quality issue","expected_citations":["hierarchy-02#mapping"],"expected_abstention":false},
+ {"id":"processing","input":"enrichment processing job","expected_route":"docs-answerable","expected_citations":["jobs-01#pending"],"expected_abstention":false},
+ {"id":"export","input":"export identity fields","expected_route":"docs-answerable","expected_citations":["export-01#schema"],"expected_abstention":false},
+ {"id":"credential","input":"API rejected credential","expected_route":"API troubleshooting","expected_citations":["api-03#keys"],"expected_abstention":false},
+ {"id":"vague-refusal","input":"Please help","expected_route":"needs-human","expected_citations":[],"expected_abstention":true},
+ {"id":"billing-refusal","input":"billing contract change","expected_route":"needs-human","expected_citations":["scope-01#scope"],"expected_abstention":false},
+ {"id":"branch","input":"branch legal entity identity","expected_route":"data-quality issue","expected_citations":["hierarchy-03#branches"],"expected_abstention":false},
+ {"id":"known-regression-route","input":"rate limit API","expected_route":"docs-answerable","expected_citations":[],"expected_abstention":false,"intentional_failure":"Expected route is deliberately stale."},
+ {"id":"known-regression-separation","input":"accounts merged","expected_route":"data-quality issue","expected_citations":[],"expected_abstention":false,"must_not_merge":[["DEMO-A","DEMO-A"]],"intentional_failure":"Invalid pair demonstrates a merge-safety catch."}
+]

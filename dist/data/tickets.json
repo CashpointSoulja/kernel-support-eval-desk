@@ -1,0 +1,12 @@
+[
+ {"id":"KRN-DEMO-0001","subject":"Brand mapped to holding company","body":"This brand got mapped to its holding company, but I requested the brand level."},
+ {"id":"KRN-DEMO-0002","subject":"Enrichment still processing","body":"My enrichment job is still processing after a long wait. Job DEMO-JOB-42."},
+ {"id":"KRN-DEMO-0003","subject":"Accounts merged","body":"Two of my accounts merged and should not have. IDs DEMO-CO-21 and DEMO-CO-22."},
+ {"id":"KRN-DEMO-0004","subject":"API rate limits","body":"How do I rate-limit API calls and retry safely?"},
+ {"id":"KRN-DEMO-0005","subject":"Unexpected parent","body":"Why does this subsidiary show a different parent than on its website?"},
+ {"id":"KRN-DEMO-0006","subject":"Not working","body":"It is wrong. Please fix it."},
+ {"id":"KRN-DEMO-0007","subject":"Change contract","body":"Please change our billing plan and contract today."},
+ {"id":"KRN-DEMO-0008","subject":"Branch identity","body":"Should a branch share the identity of its owning legal entity?"},
+ {"id":"KRN-DEMO-0009","subject":"Export fields","body":"Which company identity fields are included in exports?"},
+ {"id":"KRN-DEMO-0010","subject":"Rejected credential","body":"The API rejects my credential. Should I keep retrying?"}
+]

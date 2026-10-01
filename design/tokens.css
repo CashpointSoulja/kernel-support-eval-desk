@@ -1,0 +1,94 @@
+:root {
+  /* Font files are available from Fontshare. Keep this reference sheet network-free:
+     install Clash Display Variable and General Sans Variable locally when matching production. */
+  --font-display: "Clash Display Variable", "Clash Display", Arial, sans-serif;
+  --font-body: "General Sans Variable", "General Sans", Arial, sans-serif;
+
+  --kernel-primary: #0C3922;
+  --kernel-primary-tint: rgba(12, 57, 34, 0.08);
+  --kernel-primary-tint-strong: rgba(12, 57, 34, 0.16);
+  --kernel-dark-bg: #2C2E33;
+  --kernel-dark-highlight: #3C4E53;
+  --kernel-off-white: #F5F5F4;
+  --kernel-pastel-grey: #E5E7EB;
+  --kernel-pastel-green: #D7E3DB;
+  --kernel-mid-grey: #D1D5DB;
+  --kernel-text: #2C2E33;
+  --kernel-text-muted: #6B7280;
+  --kernel-white: #FFFFFF;
+  --kernel-primary-site: #8FA998;
+  --kernel-secondary: #32343A;
+  --kernel-secondary-splash: #6B7280;
+  --kernel-label-on-dark: #BCCBC1;
+  --kernel-label-old-way: #E88A8A;
+  --kernel-field-label: #8C9CAD;
+
+  --font-size-hero: 70px;
+  --line-height-hero: 70px;
+  --font-size-h2: 42px;
+  --line-height-h2: 50px;
+  --font-size-quote: 23px;
+  --line-height-quote: 27px;
+  --font-size-card-title: 18px;
+  --line-height-card-title: 30px;
+  --font-size-label-large: 24px;
+  --line-height-label-large: 20px;
+  --font-size-label: 16px;
+  --line-height-label: 20px;
+  --font-size-body: 13.5px;
+  --line-height-body: 21.6px;
+  --font-size-nav: 14px;
+  --line-height-nav: 20px;
+  --font-size-button-small: 13.6px;
+  --font-size-meta: 12.5px;
+  --font-size-footer: 12px;
+  --line-height-footer: 20px;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --letter-spacing-default: normal;
+
+  --space-0: 0px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-14: 14px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-58: 58px;
+  --space-70: 70px;
+  --space-80: 80px;
+  --container: 1280px;
+  --container-inner: 1216px;
+  --nav-height: 70px;
+  --nav-inner-height: 58px;
+  --hero-height-observed: 632px;
+  --radius-button: 6px;
+  --kernel-radius: 8px;
+  --radius-nav: 10px;
+  --radius-round: 50%;
+  --border-diagram: 1px solid var(--kernel-primary);
+  --border-button: 2px solid var(--kernel-primary);
+  --shadow-none: none;
+  --nav-background: rgba(255, 255, 255, 0.85);
+}
+
+/* Production font declarations, once licensed files are stored locally:
+@font-face {
+  font-family: "Clash Display Variable";
+  src: url("./fonts/ClashDisplay-Variable.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "General Sans Variable";
+  src: url("./fonts/GeneralSans-Variable.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+}
+*/

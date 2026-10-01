@@ -1,0 +1,8 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {readFile} from 'node:fs/promises';import {routeTicket,retrieve,draftReply,findDuplicate,exportFixture,runFixture} from '../src/core.js';
+const docs=JSON.parse(await readFile(new URL('../data/docs.json',import.meta.url)));
+test('router exposes rule matches',()=>{const r=routeTicket('API rate limit help');assert.equal(r.route,'API troubleshooting');assert.deepEqual(r.matches,['api','rate limit']);});
+test('retrieval applies threshold and abstains without evidence',()=>{assert.equal(retrieve('purple elephants',docs).length,0);assert.equal(draftReply({subject:'Help',body:'Please help'},docs).abstained,true);});
+test('retrieval returns source identifiers and scores',()=>{const hit=retrieve('API rate limits',docs)[0];assert.equal(hit.id,'api-01');assert.ok(hit.score>0);});
+test('dedupe detects token overlap',()=>{const match=findDuplicate({reported:'two accounts merged',expected:'keep accounts separate'},[{id:'case-1',reported:'accounts merged together',expected:'accounts stay separate'}]);assert.equal(match.id,'case-1');});
+test('fixture export requires approval',()=>{const ticket={id:'KRN-DEMO-X',subject:'Help',body:'Please help'};assert.throws(()=>exportFixture(ticket,{decision:'Rejected',draft:{abstained:true}}));const f=exportFixture(ticket,{decision:'Approved',draft:{abstained:true,citations:[]}});assert.equal(f.expected_abstention,true);});
+test('runner validates route, abstention, citations, and separation',()=>{const r=runFixture({input:'API rate limit',expected_route:'API troubleshooting',expected_abstention:false,expected_citations:['api-01#limits'],must_not_merge:[['A','B']]},docs);assert.equal(r.pass,true);});

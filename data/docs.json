@@ -1,0 +1,17 @@
+[
+ {"id":"identity-01","title":"Identity levels","section":"levels","text":"A brand is a market-facing name and may belong to a legal subsidiary. A parent represents the controlling organization in the company hierarchy."},
+ {"id":"identity-02","title":"Persistent identifiers","section":"ids","text":"A persistent company identifier stays attached to the same business identity when display fields change."},
+ {"id":"hierarchy-01","title":"Parent evidence","section":"review","text":"Conflicting parent relationships require a data-quality review with a source link and the expected parent."},
+ {"id":"hierarchy-02","title":"Brands and parents","section":"mapping","text":"Do not substitute a holding company for a brand when the requested entity level is brand."},
+ {"id":"hierarchy-03","title":"Branches","section":"branches","text":"A branch is a location-level operation and should remain distinct from its owning legal entity."},
+ {"id":"merge-01","title":"Suspected merges","section":"report","text":"Report an incorrect merge with both company identifiers and evidence that the businesses are distinct."},
+ {"id":"merge-02","title":"Merge safeguards","section":"separation","text":"Companies marked as must not merge remain separate during identity resolution."},
+ {"id":"api-01","title":"Rate limits","section":"limits","text":"When a rate limit is reached, pause requests and retry after the response retry interval."},
+ {"id":"api-02","title":"Backoff","section":"retry","text":"Use exponential backoff for repeated temporary API failures."},
+ {"id":"api-03","title":"Authentication","section":"keys","text":"A rejected credential should be replaced before retrying the request."},
+ {"id":"jobs-01","title":"Processing states","section":"pending","text":"An enrichment job can remain processing while its source records are being normalized."},
+ {"id":"jobs-02","title":"Stalled jobs","section":"stalled","text":"If processing does not advance, collect the demo job identifier and elapsed time for troubleshooting."},
+ {"id":"export-01","title":"Export fields","section":"schema","text":"Exports include the persistent identifier, display name, entity level, and sourced attributes."},
+ {"id":"quality-01","title":"Evidence","section":"links","text":"Data-quality reports should include a public source link and a precise expected relationship."},
+ {"id":"scope-01","title":"Support scope","section":"scope","text":"Billing and contract changes require a person and are not answered from product documentation."}
+]
